@@ -3,6 +3,11 @@ window.addEventListener('load', () => {
     navbar.style.background = 'papayawhip';
 });
 
+const floatingNav = document.querySelector('.main-navigation');
+floatingNav.addEventListener('reset', () => {
+    floatingNav.preventDefault();
+});
+
 const signUpBtn = document.querySelector('.btn');
 signUpBtn.addEventListener('click', () => {
     alert("Sign Up today!");
